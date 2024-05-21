@@ -26,6 +26,28 @@
     /* border-bottom: 1px solid; */
     z-index: 4;
   }
+  #resume{
+    padding: 0 1em;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* border-bottom: 1px solid; */
+    z-index: 4;
+  }
+  .resume {
+    /*margin: 1rem;*/
+    /*border-radius: 0.5em;*/
+    font-size: 2.2rem;
+    padding: 2rem;
+    /*background-color: white;*/
+  }
+  .resume:hover {
+    background-color: whitesmoke;
+  }
   .nav-link {
     font-size: 2.2rem;
     padding: 2rem;
