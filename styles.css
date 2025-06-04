@@ -14,7 +14,9 @@
     text-decoration: none;
   }
   #navbar {
-    background-color: #c4c4c4;
+    /*background-color: #c4c4c4;*/
+    /*background: linear-gradient(90deg, #c4c4c4 10%, #303841);*/
+    backdrop-filter: brightness(0.9) blur(8px);
     padding: 0 1em;
     width: 100%;
     position: fixed;
@@ -59,7 +61,8 @@
     /* background-color: white; */
     /* background: linear-gradient(62deg, #3a3d40 10%, #181719); */
     /* background: linear-gradient(62deg, #b0b2b4 10%, white); */
-    background: linear-gradient(62deg, #c4c4c4 10%, white);
+    /*background: linear-gradient(62deg, #c4c4c4 10%, white);*/
+    background: linear-gradient(118deg, #c4c4c4 10%, white);
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -214,15 +217,39 @@
     grid-template-columns: repeat(1, 1fr);
     }
   }
-  @media only screen and (max-width: 460px) {
+  /* @media only screen and (max-width: 460px) {
     #navbar {
       justify-content: center;
+    }
+  } */
+   @media only screen and (max-width: 460px) {
+    #navbar {
+      justify-content: center;
+    }
+    #contact-info div:nth-of-type(2) {
+      flex-direction: column;
+      gap: 15px;
+    }
+    #resume {
+      width: fit-content;
+      display: block;
+      top: auto;
+      left: auto;
+      bottom: 20px;
+      right: 10px;
+    }
+    .resume {
+      padding: 10px;
+      background-color: #a1a1a1;
+      border-radius: 10px;
+      /* backdrop-filter: brightness(0.9) blur(8px); */
     }
   }
   @media only screen and (max-width: 980px) {
     #welcome-section {
       flex-direction: column-reverse;
-      justify-content: space-between;
+      /*justify-content: space-between;*/
+      /*add above comment back when you want to add an image with dimensions of 1731 x 1740*/
     }
     #welcome-section img {
       height: 70%;
@@ -232,7 +259,9 @@
       margin-top: 75px;
     }
     #welcome-section h1 {
-      font-size: 55.68px;
+      /*font-size: 55.68px;*/
+      font-size: clamp(34px, calc(100vw/16), 55.68px);
+      /*font-size: calc(100vw/16);*/
     }
     #welcome-section i {
       font-size: 27.84px;
