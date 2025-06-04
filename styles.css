@@ -30,7 +30,7 @@
   }
   #resume{
     padding: 0 1em;
-    width: 50%;
+    /* width: 50%; */
     position: fixed;
     top: 0;
     left: 0;
@@ -232,7 +232,7 @@
     }
     #resume {
       width: fit-content;
-      display: block;
+      display: flex;
       top: auto;
       left: auto;
       bottom: 20px;
@@ -240,9 +240,8 @@
     }
     .resume {
       padding: 10px;
-      background-color: #a1a1a1;
       border-radius: 10px;
-      /* backdrop-filter: brightness(0.9) blur(8px); */
+      backdrop-filter: brightness(0.9) blur(8px);
     }
   }
   @media only screen and (max-width: 980px) {
