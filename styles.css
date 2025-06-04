@@ -13,11 +13,18 @@
     font-weight: 600;
     text-decoration: none;
   }
+  #navbar a, .resume {
+    color: black;
+    /* font-weight: 600; */
+    font-weight: 400;
+    text-decoration: none;
+  }
   #navbar {
-    /*background-color: #c4c4c4;*/
-    /*background: linear-gradient(90deg, #c4c4c4 10%, #303841);*/
-    backdrop-filter: brightness(0.9) blur(8px);
-    padding: 0 1em;
+    background: linear-gradient(90deg, #c4c4c4 10%, white);
+    /* background-color: #c4c4c4; */
+    /* background: linear-gradient(90deg, #c4c4c4 10%, #303841); */
+    /* backdrop-filter: brightness(0.9) blur(9px); */
+    padding: 0 10em;
     width: 100%;
     position: fixed;
     top: 0;
@@ -29,7 +36,7 @@
     z-index: 4;
   }
   #resume{
-    padding: 0 1em;
+    padding: 0 10em;
     /* width: 50%; */
     position: fixed;
     top: 0;
@@ -62,7 +69,7 @@
     /* background: linear-gradient(62deg, #3a3d40 10%, #181719); */
     /* background: linear-gradient(62deg, #b0b2b4 10%, white); */
     /*background: linear-gradient(62deg, #c4c4c4 10%, white);*/
-    background: linear-gradient(118deg, #c4c4c4 10%, white);
+    background: linear-gradient(90deg, #c4c4c4 10%, white);
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -92,7 +99,8 @@
     padding: 100px 20px;
     /* background-color: #45567d; */
     /* background: linear-gradient(62deg, #4a68d6 10%, #2E3767); */
-    background: linear-gradient(62deg, #2E3767 30%, #4a68d6);
+    /* background: linear-gradient(62deg, #2E3767 30%, #4a68d6); */
+    background: linear-gradient(90deg, #c4c4c4 10%, white);
     text-align: center;
   }
   #projects h2 {
@@ -101,9 +109,9 @@
     width: max-content;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    color: black;
     padding: 10px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
     font-size: 3vw;
   }
   #projects-grid {
@@ -231,6 +239,28 @@
       gap: 15px;
     }
     #resume {
+      width: fit-content;
+      display: flex;
+      top: auto;
+      left: auto;
+      bottom: 20px;
+      right: 10px;
+    }
+    .resume {
+      padding: 10px;
+      border-radius: 10px;
+      backdrop-filter: brightness(0.9) blur(8px);
+    }
+  }
+  @media only screen and (max-width: 670px) {
+    span {
+      display: none;
+    }
+    /* i:hover + span {
+      display: inline;
+    } */
+    #resume {
+      padding: 0 1em;
       width: fit-content;
       display: flex;
       top: auto;
