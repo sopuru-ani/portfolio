@@ -363,6 +363,10 @@ footer p {
     display: none;
   }
 
+  .bg-overlay {
+    filter: blur(6px);
+  }
+
   /* i:hover + span {
       display: inline;
     } */
